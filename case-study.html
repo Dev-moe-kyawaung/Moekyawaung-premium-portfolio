@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — Moe Kyaw</title>
+  <meta name="description" content="Detailed project case study by Moe Kyaw.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <a href="projects.html" class="text-link">← Back to projects</a>
+        <span class="eyebrow" style="margin-top:2rem;">Case study</span>
+        <h1 data-case-title>Finora Mobile Banking</h1>
+        <p class="case-lead" data-case-description>
+          A calm and secure money-management experience focused on transaction
+          clarity and fast interaction.
+        </p>
+
+        <div class="case-meta">
+          <div>
+            <span>Role</span>
+            <strong>Lead Android Engineer</strong>
+          </div>
+
+          <div>
+            <span>Platform</span>
+            <strong>Android 8+</strong>
+          </div>
+
+          <div>
+            <span>Architecture</span>
+            <strong>Clean + MVI</strong>
+          </div>
+
+          <div>
+            <span>Stack</span>
+            <div class="tag-list" data-case-stack></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <span class="eyebrow">01 · Context</span>
+        <h2>Designing confidence into everyday financial actions.</h2>
+        <p>
+          The product needed to make money movement feel simple without hiding
+          important information. Every critical action needed clear feedback,
+          predictable state, and secure handling.
+        </p>
+
+        <span class="eyebrow" style="margin-top:5rem;">02 · Problem</span>
+        <h2>Users needed clarity before commitment.</h2>
+        <p>
+          The main challenge was balancing a fast interaction model with the
+          level of detail required for financial decisions.
+        </p>
+
+        <span class="eyebrow" style="margin-top:5rem;">03 · Architecture</span>
+        <h2>A layered system designed for change.</h2>
+        <ul>
+          <li>Presentation layer with Compose and state-driven screens.</li>
+          <li>Domain layer with isolated business use cases.</li>
+          <li>Data layer with repository abstractions.</li>
+          <li>Secure local storage for sensitive session information.</li>
+          <li>Automated tests for critical user journeys.</li>
+        </ul>
+
+        <span class="eyebrow" style="margin-top:5rem;">04 · Outcome</span>
+        <h2>Quality became part of the product experience.</h2>
+        <p>
+          The result was a mobile experience with deliberate motion, readable
+          states, secure data handling, and a delivery workflow that supported
+          continuous improvement.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <a href="contact.html" class="text-link">Start a conversation →</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/case-study.js"></script>
+</body>
+</html>
