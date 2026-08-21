@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Dev-Moe-kyawaung/sitemap.xml
+https://github.com/Dev-moe-kyawaung/Moekyawaung-premium-portfolio/sitemap.xml
