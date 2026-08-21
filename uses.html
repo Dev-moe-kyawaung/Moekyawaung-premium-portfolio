@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uses — Moe Kyaw</title>
+  <meta name="description" content="Tools, technologies, and workflow used by Moe Kyaw.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Tools and workflow</span>
+        <h1>The system behind the work.</h1>
+        <p class="case-lead">
+          A practical toolkit for writing, designing, building, testing, and
+          shipping production software.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3 stagger reveal">
+        <article class="glass-card">
+          <span class="eyebrow">Build</span>
+          <h3 style="margin-top:1rem;">Android Studio</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Kotlin, Compose, Gradle, Android Profiler, Layout Inspector, and
+            Compose Preview.
+          </p>
+        </article>
+
+        <article class="glass-card">
+          <span class="eyebrow">Design</span>
+          <h3 style="margin-top:1rem;">Figma + Design Tokens</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Component thinking, semantic color, spacing systems, typography,
+            and interaction prototypes.
+          </p>
+        </article>
+
+        <article class="glass-card">
+          <span class="eyebrow">Ship</span>
+          <h3 style="margin-top:1rem;">GitHub Actions</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Automated tests, builds, signing, distribution, and deployment
+            workflows.
+          </p>
+        </article>
+
+        <article class="glass-card">
+          <span class="eyebrow">Observe</span>
+          <h3 style="margin-top:1rem;">Crashlytics + Sentry</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Error monitoring, performance signals, release health, and
+            actionable diagnostics.
+          </p>
+        </article>
+
+        <article class="glass-card">
+          <span class="eyebrow">Document</span>
+          <h3 style="margin-top:1rem;">Markdown + Git</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Clear README files, decision records, pull requests, and reusable
+            technical documentation.
+          </p>
+        </article>
+
+        <article class="glass-card">
+          <span class="eyebrow">Improve</span>
+          <h3 style="margin-top:1rem;">Profilers + Benchmarks</h3>
+          <p style="margin-top:1rem;color:var(--text-500);">
+            Macrobenchmark, Perfetto, memory profiling, Baseline Profiles, and
+            iterative optimization.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <a href="contact.html" class="text-link">Start a conversation →</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
