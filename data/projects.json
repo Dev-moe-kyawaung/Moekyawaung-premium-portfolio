@@ -1,0 +1,42 @@
+[
+  {
+    "id": "finora",
+    "title": "Finora Mobile Banking",
+    "year": "2026",
+    "category": "Android",
+    "stack": ["Kotlin", "Compose", "MVI", "Keystore"],
+    "description": "A calm and secure money-management experience focused on transaction clarity and fast interaction.",
+    "coverClass": "cover-finora",
+    "featured": true
+  },
+  {
+    "id": "pulse",
+    "title": "Pulse Health",
+    "year": "2025",
+    "category": "Android",
+    "stack": ["Compose", "Firebase", "Room"],
+    "description": "An offline-first health tracking application with friendly feedback and practical data visualization.",
+    "coverClass": "cover-pulse",
+    "featured": false
+  },
+  {
+    "id": "routeflow",
+    "title": "RouteFlow",
+    "year": "2024",
+    "category": "Cross-platform",
+    "stack": ["KMP", "GraphQL", "Kotlin"],
+    "description": "A logistics coordination platform designed around live status updates and predictable state transitions.",
+    "coverClass": "cover-routeflow",
+    "featured": false
+  },
+  {
+    "id": "studio",
+    "title": "Portfolio Studio",
+    "year": "2026",
+    "category": "Web",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "description": "A premium developer portfolio system with cinematic visuals, accessible interactions, and static deployment.",
+    "coverClass": "cover-studio",
+    "featured": false
+  }
+]
