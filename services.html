@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Moe Kyaw</title>
+  <meta name="description" content="Android development, architecture modernization, performance, and design system services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h1>Engineering support from concept to release.</h1>
+        <p class="case-lead">
+          Focused technical support for teams that care about product quality,
+          maintainability, and delivery confidence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container services-grid stagger reveal">
+        <article class="service-card">
+          <span class="service-index">01</span>
+          <h3>Android Product Development</h3>
+          <p>
+            Production-ready Kotlin and Jetpack Compose applications with
+            maintainable architecture and polished user experience.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-index">02</span>
+          <h3>Architecture Modernization</h3>
+          <p>
+            Refactor legacy Android codebases toward modular, testable,
+            observable, and scalable architecture.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-index">03</span>
+          <h3>Performance Engineering</h3>
+          <p>
+            Improve startup time, frame performance, memory behavior, APK
+            size, and battery efficiency.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-index">04</span>
+          <h3>Design System Implementation</h3>
+          <p>
+            Translate design language into reusable components, tokens,
+            accessibility rules, and motion patterns.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <a href="contact.html" class="text-link">Discuss your project →</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
