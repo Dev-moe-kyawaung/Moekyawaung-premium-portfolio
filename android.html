@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Engineering — Moe Kyaw</title>
+  <meta name="description" content="Android engineering expertise including Kotlin, Jetpack Compose, architecture, security, and performance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Android engineering</span>
+        <h1>From first frame to production release.</h1>
+        <p class="case-lead">
+          Kotlin, Jetpack Compose, Clean Architecture, secure data handling,
+          performance tuning, and release confidence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Core capabilities</span>
+          <h2>Every layer has a reason.</h2>
+        </div>
+
+        <div class="capability-grid stagger reveal">
+          <article class="capability-card">
+            <span class="capability-number">01</span>
+            <div class="capability-icon">🎨</div>
+            <h3>Jetpack Compose</h3>
+            <p>
+              Declarative UI, state-driven rendering, Material 3, custom
+              layouts, adaptive screens, and motion.
+            </p>
+            <div class="capability-tags">
+              <span>Compose</span>
+              <span>Material 3</span>
+              <span>Animation</span>
+            </div>
+          </article>
+
+          <article class="capability-card">
+            <span class="capability-number">02</span>
+            <div class="capability-icon">⌘</div>
+            <h3>Kotlin Systems</h3>
+            <p>
+              Coroutines, Flow, sealed state, structured concurrency, and
+              readable domain abstractions.
+            </p>
+            <div class="capability-tags">
+              <span>Flow</span>
+              <span>Coroutines</span>
+              <span>KMP</span>
+            </div>
+          </article>
+
+          <article class="capability-card">
+            <span class="capability-number">03</span>
+            <div class="capability-icon">🔐</div>
+            <h3>Secure Storage</h3>
+            <p>
+              Android Keystore, encrypted preferences, biometric access, and
+              secure authentication flows.
+            </p>
+            <div class="capability-tags">
+              <span>Keystore</span>
+              <span>Biometrics</span>
+              <span>Encryption</span>
+            </div>
+          </article>
+
+          <article class="capability-card">
+            <span class="capability-number">04</span>
+            <div class="capability-icon">🚀</div>
+            <h3>Performance</h3>
+            <p>
+              Startup tracing, Baseline Profiles, memory profiling, battery
+              behavior, and R8 optimization.
+            </p>
+            <div class="capability-tags">
+              <span>Macrobenchmark</span>
+              <span>R8</span>
+              <span>Perfetto</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="glass-card reveal">
+          <span class="eyebrow">Compose pattern</span>
+          <h2 style="margin-top:1rem;font-size:2.5rem;">
+            State should drive the interface.
+          </h2>
+
+          <pre style="margin-top:2rem;overflow:auto;color:var(--text-300);font-family:var(--font-code);font-size:.76rem;line-height:1.8;"><code>@Composable
+fun ProfileScreen(
+    viewModel: ProfileViewModel = hiltViewModel()
+) {
+    val state by viewModel.uiState
+        .collectAsStateWithLifecycle()
+
+    when (state) {
+        ProfileUiState.Loading ->
+            LoadingContent()
+
+        is ProfileUiState.Success ->
+            ProfileContent(state.profile)
+
+        is ProfileUiState.Error ->
+            ErrorContent(
+                onRetry = viewModel::retry
+            )
+    }
+}</code></pre>
+        </div>
+
+        <div class="glass-card reveal">
+          <span class="eyebrow">Architecture pattern</span>
+          <h2 style="margin-top:1rem;font-size:2.5rem;">
+            Boundaries make change safer.
+          </h2>
+
+          <div class="stack" style="margin-top:2rem;">
+            <div class="tag">Presentation → UI, ViewModel, state</div>
+            <div class="tag">Domain → entities, use cases, contracts</div>
+            <div class="tag">Data → APIs, database, repository implementations</div>
+            <div class="tag">Infrastructure → monitoring, build, delivery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <a href="skills.html" class="text-link">View complete skills matrix →</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
