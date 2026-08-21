@@ -866,7 +866,148 @@
   font-size: 1.03rem;
 }
 
+
 .prose ul {
   padding-left: 1.2rem;
   list-style: disc;
+}
+
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-avatar,
+.profile-hero-avatar {
+  object-fit: cover;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(212, 168, 67, .45),
+      transparent 34%
+    ),
+    #333;
+}
+
+.profile-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.profile-hero-avatar {
+  position: relative;
+  z-index: 2;
+  width: min(270px, 72vw);
+  aspect-ratio: 1 / 1;
+  border: 7px solid rgba(255, 255, 255, .28);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 15px rgba(212, 168, 67, .08),
+    0 20px 70px rgba(0, 0, 0, .35);
+}
+
+.profile-orbit {
+  position: relative;
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+}
+
+.profile-orbit-ring {
+  position: absolute;
+  width: min(330px, 85vw);
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(212, 168, 67, .65);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 18px rgba(212, 168, 67, .06),
+    0 0 60px rgba(212, 168, 67, .24);
+  animation: profileOrbit 18s linear infinite;
+}
+
+.profile-orbit-ring::before,
+.profile-orbit-ring::after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 20px var(--gold);
+  content: "";
+}
+
+.profile-orbit-ring::before {
+  top: 17px;
+  left: 48%;
+}
+
+.profile-orbit-ring::after {
+  right: 18px;
+  bottom: 45px;
+  background: #8fb7ff;
+  box-shadow: 0 0 20px #8fb7ff;
+}
+
+.profile-badge {
+  margin: 3px;
+  padding: 8px 12px;
+  color: var(--text);
+  border: 1px solid rgba(212, 168, 67, .38);
+  border-radius: 999px;
+  background: rgba(212, 168, 67, .13);
+}
+
+.profile-copy {
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.profile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-socials a {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: var(--text);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  background: var(--card);
+  transition:
+    color .25s ease,
+    background .25s ease,
+    transform .25s ease;
+}
+
+.profile-socials a:hover {
+  color: #111;
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+
+.btn-outline-gold {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: transparent;
+}
+
+.btn-outline-gold:hover {
+  color: #111;
+  background: var(--gold);
+}
+
+@keyframes profileOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
