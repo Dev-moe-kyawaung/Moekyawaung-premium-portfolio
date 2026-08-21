@@ -1,0 +1,80 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#090a12"/>
+      <stop offset="100%" stop-color="#151827"/>
+    </linearGradient>
+
+    <linearGradient id="brand" x1="0" x2="1">
+      <stop offset="0%" stop-color="#c8a1ff"/>
+      <stop offset="100%" stop-color="#54eaff"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#a86cff" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#a86cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="950" cy="120" r="300" fill="url(#glow)"/>
+  <circle cx="180" cy="550" r="250" fill="url(#glow)" opacity=".45"/>
+
+  <text
+    x="100"
+    y="190"
+    fill="#54eaff"
+    font-family="Arial, sans-serif"
+    font-size="25"
+    font-weight="bold"
+    letter-spacing="6"
+  >
+    SENIOR ANDROID DEVELOPER
+  </text>
+
+  <text
+    x="100"
+    y="310"
+    fill="url(#brand)"
+    font-family="Arial, sans-serif"
+    font-size="88"
+    font-weight="bold"
+  >
+    Moe Kyaw
+  </text>
+
+  <text
+    x="100"
+    y="390"
+    fill="#c8cce0"
+    font-family="Arial, sans-serif"
+    font-size="30"
+  >
+    Kotlin · Jetpack Compose · Clean Architecture
+  </text>
+
+  <rect
+    x="100"
+    y="470"
+    width="250"
+    height="58"
+    rx="29"
+    fill="url(#brand)"
+  />
+
+  <text
+    x="155"
+    y="508"
+    fill="#ffffff"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="bold"
+  >
+    moekyaw.dev
+  </text>
+</svg>
