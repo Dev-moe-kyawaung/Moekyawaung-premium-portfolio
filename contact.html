@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Moe Kyaw</title>
+  <meta name="description" content="Contact Moe Kyaw for Android development, architecture, and engineering opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s build something useful.</h1>
+        <p class="case-lead">
+          Tell me what you are building, where you are stuck, or what kind of
+          engineering support you need.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="stack reveal">
+          <div>
+            <span class="eyebrow">Direct contact</span>
+            <h2 style="margin-top:1rem;font-size:3rem;">
+              Start with a clear message.
+            </h2>
+          </div>
+
+          <p>
+            For opportunities, collaborations, or technical discussions,
+            please include a short summary of the product, timeline, and
+            desired outcome.
+          </p>
+
+          <div class="stack">
+            <a class="text-link" href="mailto:hello@example.com">
+              hello@example.com →
+            </a>
+
+            <a
+              class="text-link"
+              href="https://github.com/YOUR-USERNAME"
+            >
+              GitHub profile →
+            </a>
+
+            <a
+              class="text-link"
+              href="https://linkedin.com/in/YOUR-USERNAME"
+            >
+              LinkedIn profile →
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  required
+                >
+              </label>
+
+              <label class="form-field">
+                <span>Email address</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                >
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span>Project type</span>
+              <select name="projectType" required>
+                <option value="">Select an option</option>
+                <option value="android">Android development</option>
+                <option value="architecture">Architecture modernization</option>
+                <option value="performance">Performance optimization</option>
+                <option value="consulting">Technical consulting</option>
+              </select>
+            </label>
+
+            <label class="form-field">
+              <span>Project details</span>
+              <textarea
+                name="message"
+                rows="7"
+                placeholder="Tell me about the product, problem, and desired outcome..."
+                required
+              ></textarea>
+            </label>
+
+            <button class="button button-primary" type="submit">
+              Send inquiry →
+            </button>
+
+            <div
+              id="form-message"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+            <p style="margin-top:1rem;color:var(--text-500);font-size:.75rem;">
+              Replace this frontend demo with Formspree, Netlify Forms,
+              EmailJS, or your own serverless endpoint before production.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <span>Available for selected opportunities.</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
