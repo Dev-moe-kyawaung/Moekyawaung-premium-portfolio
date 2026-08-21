@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Android SDK",
+    "category": "Android",
+    "level": 95,
+    "icon": "📱",
+    "description": "Production Android applications, lifecycle management, background work, permissions, services, and platform APIs.",
+    "tags": ["Android", "Mobile", "SDK"]
+  },
+  {
+    "name": "Kotlin",
+    "category": "Language",
+    "level": 94,
+    "icon": "🟣",
+    "description": "Idiomatic Kotlin with Coroutines, Flow, sealed types, extension functions, and type-safe abstractions.",
+    "tags": ["Kotlin", "Coroutines", "Flow"]
+  },
+  {
+    "name": "Jetpack Compose",
+    "category": "Android",
+    "level": 93,
+    "icon": "🎨",
+    "description": "Declarative interfaces, Material 3, custom layouts, navigation, state, and Compose animation systems.",
+    "tags": ["Compose", "Material 3", "UI"]
+  },
+  {
+    "name": "Clean Architecture",
+    "category": "Architecture",
+    "level": 91,
+    "icon": "🏛️",
+    "description": "Layered systems with presentation, domain, and data boundaries designed for testing and long-term change.",
+    "tags": ["Architecture", "MVVM", "MVI"]
+  },
+  {
+    "name": "Firebase",
+    "category": "Backend",
+    "level": 88,
+    "icon": "🔥",
+    "description": "Authentication, Firestore, Cloud Messaging, Crashlytics, Analytics, and remote configuration.",
+    "tags": ["Firebase", "Auth", "Firestore"]
+  },
+  {
+    "name": "GraphQL",
+    "category": "Backend",
+    "level": 80,
+    "icon": "◈",
+    "description": "Type-safe API integration, Apollo Kotlin, normalized caching, schemas, pagination, and subscriptions.",
+    "tags": ["GraphQL", "Apollo", "API"]
+  },
+  {
+    "name": "CI/CD",
+    "category": "DevOps",
+    "level": 88,
+    "icon": "🔄",
+    "description": "GitHub Actions, Gradle automation, testing pipelines, signing, beta distribution, and release workflows.",
+    "tags": ["GitHub Actions", "Gradle", "Fastlane"]
+  },
+  {
+    "name": "DevOps",
+    "category": "DevOps",
+    "level": 78,
+    "icon": "☁️",
+    "description": "Docker, cloud deployment, monitoring, environment management, and operational reliability.",
+    "tags": ["Docker", "Cloud", "Monitoring"]
+  },
+  {
+    "name": "UI/UX Animation",
+    "category": "Design",
+    "level": 87,
+    "icon": "✨",
+    "description": "Motion systems, micro-interactions, shared transitions, Lottie, GSAP, and expressive product behavior.",
+    "tags": ["Motion", "GSAP", "Design Systems"]
+  },
+  {
+    "name": "Performance Tuning",
+    "category": "Performance",
+    "level": 86,
+    "icon": "🚀",
+    "description": "Startup optimization, memory profiling, battery behavior, Baseline Profiles, R8, and frame performance.",
+    "tags": ["Performance", "R8", "Startup"]
+  }
+]
