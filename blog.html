@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Moe Kyaw</title>
+  <meta name="description" content="Android, Kotlin, architecture, performance, and UI engineering articles by Moe Kyaw.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">M</span><span>Moe Kyaw</span></a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" data-theme-toggle aria-label="Switch theme">☼</button>
+        <button class="menu-button" data-menu-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Blog / Articles</span>
+        <h1>Ideas behind the implementation.</h1>
+        <p class="case-lead">
+          Notes on Android engineering, architecture, security, performance,
+          and motion design.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="blog-grid" class="article-grid stagger reveal"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Moe Kyaw</span>
+      <a href="contact.html" class="text-link">Discuss an idea →</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.querySelector("#blog-grid");
+
+      grid.innerHTML = PORTFOLIO_DATA.articles
+        .map(
+          (article) => `
+            <article class="article-card">
+              <time datetime="${article.date}">
+                ${article.date}
+              </time>
+
+              <span class="eyebrow" style="margin-top:1rem;">
+                ${article.category}
+              </span>
+
+              <h3>${article.title}</h3>
+              <p>${article.description}</p>
+
+              <a href="contact.html" class="text-link">
+                Discuss this topic →
+              </a>
+            </article>
+          `
+        )
+        .join("");
+    });
+  </script>
+</body>
+</html>
